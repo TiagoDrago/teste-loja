@@ -17,9 +17,14 @@ function Contador() {
         setContador(contador + 1);
     } 
 
+    function removeContador(){
+        setContador(contador - 1);
+    }
+
     return (<div>
         <div>{contador}</div>
         <button onClick={adicionarContador}>Adicionar</button>
+        <button onClick={removeContador}>Remover</button>
     
     </div>)
         
